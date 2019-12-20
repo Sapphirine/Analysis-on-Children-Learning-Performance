@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../static/js/myjs.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;" charset='utf-8' />
+    <title>Big Data Show</title>
+    <link href="../static/css/mycss.css" rel="stylesheet"/>
+
+</head>
+<body>
+    <div class="section" >
+        <div class="container" >
+            <div id='head' class="motto-wrap">
+                <div class="big-data">
+                    Big Data Analytics Project Show
+                </div>
+                <div class="name">
+                    Zhichao Zhang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yanjun Liu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ruixin Liu
+                </div>
+            </div>
+                <div class="section">
+                    <div class="container">
+                        <div class="submit-block">
+                            <input id="choose_form" type="text" name="dataset_num" placeholder="Input 1~4 to choose a dataset"/>
+                            <a id="submit" type="submit" class="button w-inline-block" onclick=choose_dataset()>
+                                    <div>Submit Number</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="divider"></div>
+            <br>
+
+            <div>
+                <br>
+                <div class="pic_div">
+                    <ul class="pic_ul">
+                        <li><img id="roc_1" src="../static/image/blank.png"><p class="pic_name">ROC curve</p></li>
+                        <li>
+                            <br>
+                            <br>
+                            <div class="info_div">
+                                <h2 class="section-heading">
+                                    Baseline Model
+                                </h2>
+                                <p class="description">
+                                    This is a baseline model trained with 195 features and 2880 instances.
+                                </p>
+                                <br>
+                                <a class="button w-inline-block" onclick="use_model_1_run()">
+                                    <div>use and run</div>
+                                </a>
+                                <br>
+                                <i id='score_des' class="description">
+                                    Quadratic Weighted Kappa Score
+                                </i>
+                                <p class="score" id="model1_score">???</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="pic_ul">
+                        <li><img id="feature_1" src="../static/image/feature1.png"><p class="pic_name">Feature Importance</p></li>
+                        <li><img id="loss_1" src="../static/image/loss1.png"><p class="pic_name">Loss</p></li>
+                    </ul>
+                </div>
+                <br>
+
+                <div id='inside_d' class="divider"></div>
+
+                <br>
+                <div class="pic_div">
+                    <ul class="pic_ul">
+                        <li><img id="roc_2" src="../static/image/blank.png"><p class="pic_name">ROC curve</p></li>
+                        <li>
+                            <br>
+                            <br>
+                            <div class="info_div">
+                                <h2 class="section-heading">
+                                    Baseline Model with Randomness
+                                </h2>
+                                <p class="description">
+                                    This is the baseline model trained with 195 features and 2880 instances,
+                                    and the labels are randomly selected.
+                                </p>
+                                <br>
+                                <a class="button w-inline-block" onclick="use_model_2_run()">
+                                    <div>use and run</div>
+                                </a>
+                                <br>
+                                <i id='score_des' class="description">
+                                    Quadratic Weighted Kappa Score
+                                </i>
+                                <p class="score" id="model2_score">???</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="pic_ul">
+                        <li><img id="feature_2" src="../static/image/feature2.png"><p class="pic_name">Feature Importance</p></li>
+                        <li><img id="loss_2" src="../static/image/loss2.png"><p class="pic_name">Loss</p></li>
+                    </ul>
+                </div>
+                <br>
+
+                <div id='inside_d' class="divider"></div>
+
+                <br>
+                <div class="pic_div">
+                    <ul class="pic_ul">
+                        <li><img id="roc_3" src="../static/image/blank.png"><p class="pic_name">ROC curve</p></li>
+                        <li>
+                            <br>
+                            <br>
+                            <div class="info_div">
+                                <br>
+                                <h2 class="section-heading">
+                                    Best Model
+                                </h2>
+                                <p class="description">
+                                    This is the model trained with top 30 most important features and 2880 instances with sampling.
+                                </p>
+                                <br>
+                                <a class="button w-inline-block" onclick="use_model_3_run()">
+                                    <div>use and run</div>
+                                </a>
+                                <br>
+                                <i id='score_des' class="description">
+                                    Quadratic Weighted Kappa Score
+                                </i>
+                                <p class="score" id="model3_score">???</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="pic_ul">
+                        <li><img id="feature_3" src="../static/image/feature3.png"><p class="pic_name">Feature Importance</p></li>
+                        <li><img id="loss_3" src="../static/image/loss2.png"><p class="pic_name">Loss</p></li>
+                    </ul>
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id='inside_d' class="divider"></div>
+
+    <div class="section">
+        <div class="container">
+            <div class="footer-wrap">
+                <a target="_blank" class="webflow-link w-inline-block">
+                    <div class="paragraph-tiny">In Columbia University 2019</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
